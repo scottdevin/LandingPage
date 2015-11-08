@@ -1,0 +1,111 @@
+<!DOCTYPE html> <html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Devin Scott">
+
+
+<title>Landing Page</title>
+
+<!--jQuery-->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+<div class="page">
+
+<!--header-->
+
+<header><p class="title">booklog</p><p class="tagline">Ease. Power. Innovation.</p>
+<p class="description">POS & Inventory Control Systems</p>
+</header>
+
+<!--subTitle-->
+
+<p class="subTitle">POS Inventory Control Software for a </br><span class="red">
+New Generation of Retailers</span></p>
+<p class="subRed">To continue please select a version:</p>
+<!--Content-->
+<img class="landing-page" src="landing-page.png">
+
+<!--Landing-booklog-->
+
+<a href="#" class="link1">
+<div class="landing-booklog">
+<div class="arrow-container1"><p class="arrow">&#xbb;</p></div>
+<h3 class="booklog">booklog</h3>
+<p class="book-text">The first Windows-based point-of-sale</br> and inventory control system designed</br> for booksellers and specialty retailers.
+</p></div>
+</a>
+
+<!--landing-college-->
+
+<a href="#" class="link2">
+<div class="landing-college">
+<div class="arrow-container2"><p class="arrow">&#xbb;</p></div>
+<h3 class="college">booklog <span class="college-red">college edition</span></h3>
+<p class="college-text">
+The fastest selling Windows-based POS,</br> inventory, &amp; text management system in</br> the college market.
+</p></div>
+</a>
+
+
+<!--footer-->
+<footer>
+
+<h2 class="booklog-footer">bootlog</h2>
+<p class="bootlog-footer-link">booklog</p>
+<p class="college-footer-link">booklog college edition</p>
+
+</footer>
+
+</div>
+</body>
+
+
+<script>
+$(document).ready(function(){
+
+    $(".link1").mouseover(function(){
+	
+	$(".arrow-container1").css({
+    background: "linear-gradient(#1958C6 50%, #194EA0 50%)"});
+	$(".book-text").css("color", "red");
+	});
+	
+	$(".link1").mouseout(function(){
+	$(".arrow-container1").css({
+    background: "linear-gradient(#27487E 50%, #2C3F5F 50%)"});
+		$(".book-text").css("color", "#333");
+
+		
+	});
+	
+	    $(".link2").mouseover(function(){
+	
+	$(".arrow-container2").css({
+    background: "linear-gradient(#1958C6 50%, #194EA0 50%)"});
+	$(".college-text").css("color", "red");
+	});
+	
+	$(".link2").mouseout(function(){
+	$(".arrow-container2").css({
+    background: "linear-gradient(#27487E 50%, #2C3F5F 50%)"});
+		$(".college-text").css("color", "#333");
+
+		
+	});
+});
+</script>
+
+</html>
+
+
+
+
